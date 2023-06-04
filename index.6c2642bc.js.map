@@ -1,1 +1,1 @@
-{"mappings":"","sources":[],"sourcesContent":[],"names":[],"version":3,"file":"index.6c2642bc.js.map"}
+{"mappings":"","sources":["src/index.js","src/js/dom.js"],"sourcesContent":["import \"./js/dom\"","//TODO:==============================================\n/*\nЗавдання 1\nНатискання на кнопку \"SHOW ME\" має виводити значення з поля введення (дивіться на елементи в html-розмітці)\n*/\n"],"names":[],"version":3,"file":"index.6c2642bc.js.map"}
