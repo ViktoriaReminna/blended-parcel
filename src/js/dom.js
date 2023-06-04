@@ -59,3 +59,42 @@
 // }
 
 // btnPassword.addEventListener('click', thirdClick);
+
+/*
+Завдання 4
+Кнопка "Зменшити" робить квадрат менше на 10 пікселів, допопка "Збільшити" - 
+більше на 10 пікселів.
+*/
+
+// const decreaseBtn = document.querySelector('#decrease');
+// const increaseBtn = document.querySelector('#increase');
+// const boxEl = document.querySelector('#box');
+
+// decreaseBtn.addEventListener('click', onClickDecrease);
+// function onClickDecrease() {
+//   const currentWidth = boxEl.getBoundingClientRect().width;
+//   const afterClickWidth = currentWidth - 10;
+//   boxEl.style.width = `${afterClickWidth}px`;
+//   boxEl.style.height = `${afterClickWidth}px`;
+
+//   console.log(afterClickWidth);
+// }
+
+// increaseBtn.addEventListener('click', onClickIncrease);
+// function onClickIncrease() {
+//   const currentWidth = boxEl.getBoundingClientRect().width;
+//   const afterClickWidth = currentWidth + 10;
+//   boxEl.style.width = `${afterClickWidth}px`;
+//   boxEl.style.height = `${afterClickWidth}px`;
+
+//   console.log(afterClickWidth);
+// }
+
+//TODO:==============================================
+
+/*
+Завдання 5
+Написати функцію, яка буде створювати список подій клавіатури event.key та event.code
+Додати класи на список eventList, на елементи eventCode та eventKey
+*/
+
