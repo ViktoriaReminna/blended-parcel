@@ -1,1 +1,1 @@
-import "./js/dom"
+import './js/dom';
