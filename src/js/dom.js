@@ -98,13 +98,13 @@
 Додати класи на список eventList, на елементи eventCode та eventKey
 */
 
-const eventThumbElement = document.querySelector('.eventThumb');
-document.addEventListener('keydown', clickListen);
-function clickListen(event) {
-  const markup = `<ul class="eventList">
-  <li class="eventCode">${event.code}</li>
-  <li class="eventKey">${event.key}</li>
-  </ul>`;
+// const eventThumbElement = document.querySelector('.eventThumb');
+// document.addEventListener('keydown', clickListen);
+// function clickListen(event) {
+//   const markup = `<ul class="eventList">
+//   <li class="eventCode">${event.code}</li>
+//   <li class="eventKey">${event.key}</li>
+//   </ul>`;
 
-  eventThumbElement.insertAdjacentHTML('beforeend', markup);
-}
+//   eventThumbElement.insertAdjacentHTML('beforeend', markup);
+// }
