@@ -56,3 +56,41 @@
 // if (onLogin) {
 //   isLogin();
 // }
+
+// ЗАДАЧА 1
+// Зробити перемикач теми. Зберігати тему у локальному сховище.
+// При перезавантаженні сторінки перевіряти сховище та ставити тему, яка там вказана.
+// Додати класи для змін тем
+
+const checkboxRef = document.querySelector('#checkbox');
+const body = document.querySelector('body');
+
+const currentTheme = localStorage.getItem('theme');
+
+switch (currentTheme) {
+  case 'dark':
+    body.classList.add('dark');
+    checkbox.checked = true;
+    break;
+  case 'light':
+    body.classList.add('light');
+    break;
+
+  default:
+    body.classList.add('light');
+    break;
+}
+
+checkboxRef.addEventListener('click', toggleTheme);
+function toggleTheme() {
+  if (checkbox.checked === true) {
+    body.classList.add('dark');
+    body.classList.remove('light');
+    localStorage.setItem('theme', 'dark');
+  }
+  if (checkbox.checked === false) {
+    body.classList.add('light');
+    body.classList.remove('dark');
+    localStorage.setItem('theme', 'light');
+  }
+}
