@@ -1,0 +1,2 @@
+const e=document.querySelector(".gallery"),t=new class{#e="https://api.unsplash.com/search/photos";#t="gcevo00lZKvSMKLnZZJPKYS5xNbpbsP_4i6E-BVlG58";async getPopularImage(e){return await fetch(`${this.#e}?client_id=${this.#t}&query=popular&page=${e}&per_page=9&orientation=portrait`).then(e=>e.json()).catch(e=>console.log(e.message))}};t.getPopularImage(1).then(t=>{let a=t.results.map(({urls:e,alt_description:t})=>`<li class='gallery__item'><img src='${e.small}' alt='${t}'></li>`).join("");e.insertAdjacentHTML("afterbegin",a)});
+//# sourceMappingURL=index.a9c49e67.js.map
